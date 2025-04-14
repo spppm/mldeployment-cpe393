@@ -9,5 +9,5 @@ X, y = iris.data, iris.target
 model = RandomForestClassifier()
 model.fit(X, y)
 
-with open("app/model.pkl", "wb") as f:
+with open(r"D:\CPE\mlops\mldeployment-cpe393\app\model.pkl", "wb") as f:
     pickle.dump(model, f)
