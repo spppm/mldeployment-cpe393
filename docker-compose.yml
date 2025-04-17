@@ -1,0 +1,8 @@
+services:
+  flask-app:
+    build: .       # 👈 Tells Docker Compose to build from your Dockerfile
+    image: ml-model
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./app:/app
